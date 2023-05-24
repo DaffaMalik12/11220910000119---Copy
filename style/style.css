@@ -1,0 +1,186 @@
+/* Animasi */
+* {padding: 0; margin: 0}
+#gambar img.road {
+    width: 100%;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+}
+img.car {
+    width: 120px;
+    z-index: 1;
+    top: 95px;
+    position: relative;
+    animation-name: moveCar;
+    animation-iteration-count: infinite;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    position: absolute;
+    margin-top: 400px;
+}
+
+@keyframes moveCar {
+    from {left: -150px}
+    to   {left: 100%;}
+}
+
+/* Default */
+body {
+    font-family:verdana,arial, helvetica, sans-serif;
+    font-size: 12px;
+    background-image: url(../Images/Pemandangan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* Pengatur Halaman */
+#container{
+    width: 1000px;
+    font-size: 90%;
+    margin: 0 auto;
+    margin: 20px 20px 20px 20px;
+}
+
+/* Pengaturan Header */
+#header{
+    /* padding: 10px; */
+    height: 75px;
+    border: #0000ff dashed 1px;
+    background-color: #99ccff;
+    background: url(../Images/Pemroraman-Lanjut-gif.gif);
+    background-position: 0px;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+}
+
+#header h1{
+    display: block;
+    width: 815px;
+    height: 110px;
+    padding: 10px;
+    color: #003399;
+    font-family: 'trebuchet ms' , Helvetica , Arial , sans-serif;
+
+}
+
+#header1{
+    background-color: #fff;
+    position: relative;
+    /* z-index: -999; */
+    /* margin-left: 50px;
+    margin-top: 30px; */
+    border-radius: 10px;
+    display: flex;
+    border: 10px solid #fff;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+#fb{
+    display: flex;
+}
+/* Pengaturan Side Panel */
+#sidebar{
+    border: #0000ff dashed 1px;
+    margin-top: 10px;
+    width: 150px;
+    float: left;
+    background-color: #20e6d2;
+}
+
+#sidebar h3{
+    color: #993300;
+    padding-left: 10px;
+    font-family: Helvetica, Arial , sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 25px;
+    
+}
+
+
+/* Pengaturan Menu Navigasi */
+ul#navmenu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+    margin-top: 10px;
+}
+
+ul#navmenu li{
+    margin-bottom: 5px;
+
+}
+
+ul#navmenu a{
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: wheat;
+    padding: 5px 5px 3px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul#navmenu a:hover, ul#navmenu a:focus, ul#navmenu a:active {
+    background-color: #333;
+    color: #fff;
+}
+
+ul#navmenu a.selected, ul#navmenu a.selected:hover, 
+ul#navmenu a.selected:focus, ul#navmenu a.selected:active{
+    background-color: #386088;
+    color: #fff;
+}
+
+ul#navmenu a.selected{
+    text-align: right;
+    cursor: default;
+}
+
+/* Pengaturan Content */
+#page{
+    border: #20e6d2 dashed 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+     width: 1000px; 
+    align-self: flex-start;
+}
+
+#page h2{
+    color: #993300;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img{
+    border: none;
+}
+
+#clear{
+    clear: both;
+}
+
+#login{
+    margin-left: -170px;
+}
+
+/* Pengaturan Footer */
+#footer{
+    border: #20e6d2 dashed 1px;
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #20e6d2;
+}
